@@ -1,0 +1,11 @@
+
+<h2>{{titular}}</h2>
+<h3> Saldo: {{ getSaldo() }}</h3>
+<br>
+
+<input #vldeposito value="" />
+<button (click)="deposito(vldeposito.value); vldeposito.value=''">deposito</button>
+<button (click)="saque(vldeposito.value);vldeposito.value=''">saque</button>
+
+
+<router-outlet></router-outlet>
